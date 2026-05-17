@@ -1,33 +1,33 @@
-#Deep Past Initiative: Machine Translation
+# Deep Past Initiative: Machine Translation
 This repository contains our submission for the Deep Past Initiative Machine Translation competition on Kaggle. The goal of this competition was to develop advanced machine translation models to translate historical texts from ancient languages (e.g., Akkadian, Sumerian) into modern English, preserving linguistic nuances and contextual accuracy.
 
-##📌 Competition Overview
+## 📌 Competition Overview
 The Deep Past Initiative focuses on bridging the gap between ancient and modern languages using AI. Participants were tasked with:
 
 Translating cuneiform inscriptions and other historical texts.
 Handling low-resource languages with limited parallel data.
 Ensuring translations are both accurate and contextually relevant.
-##🔧 Our Approach
+## 🔧 Our Approach
 We employed a hybrid approach combining fine-tuning and Retrieval-Augmented Generation (RAG) to tackle the challenges of ancient language translation:
 
-###1. Fine-Tuning with Unsloth
+### 1. Fine-Tuning with Unsloth
 Used Unsloth to efficiently fine-tune a Mistral-7B model on the provided dataset.
 Optimized for low-resource scenarios with techniques like:
 LoRA (Low-Rank Adaptation) for parameter-efficient fine-tuning.
 Gradient Checkpointing to reduce memory usage.
 Mixed-Precision Training (FP16/bfloat16) for faster convergence.
-###2. RAG-Based System
+### 2. RAG-Based System
 Integrated a Retrieval-Augmented Generation (RAG) pipeline to enhance translations using the dictionary provided by the competition organizers.
 Steps:
 Preprocessing: Cleaned and tokenized the input text (see preprocessing.ipynb).
 Dictionary Lookup: Used the provided dictionary to retrieve relevant translations for rare or ambiguous terms (see Dictionary_transcription_translation_extraction.ipynb).
 Contextual Augmentation: Combined retrieved dictionary entries with the input text to provide context-aware prompts to the fine-tuned model.
 Post-Processing: Applied spell-checking and grammar correction (see translation_spelling_correction.ipynb).
-###3. Pipeline Workflow
+### 3. Pipeline Workflow
 Data Scraping: Extracted and organized raw data (see scraping_data.ipynb and AICC_Scraping.ipynb).
 POS Tagging: Part-of-speech tagging for better tokenization (see POS_Tagging.ipynb).
 Model Training: Fine-tuned the model with custom scripts (see rag_inference_plus_training_pipeline.ipynb).
-📂 Notebooks
+## 📂 Notebooks
 Notebook	Description
 AICC_Scraping.ipynb	Scraping and organizing raw cuneiform data.
 Dictionary_transcription_translation_extraction.ipynb	Extracting and processing the provided dictionary for RAG.
