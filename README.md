@@ -27,18 +27,20 @@ Post-Processing: Applied spell-checking and grammar correction (see translation_
 Data Scraping: Extracted and organized raw data (see scraping_data.ipynb and AICC_Scraping.ipynb).
 POS Tagging: Part-of-speech tagging for better tokenization (see POS_Tagging.ipynb).
 Model Training: Fine-tuned the model with custom scripts (see rag_inference_plus_training_pipeline.ipynb).
+
 ## 📂 Notebooks
-Notebook	Description
-AICC_Scraping.ipynb	Scraping and organizing raw cuneiform data.
-Dictionary_transcription_translation_extraction.ipynb	Extracting and processing the provided dictionary for RAG.
-EBL_Dictionary_Processing.ipynb	Additional dictionary preprocessing.
-Gensim_Akkadian.ipynb	Topic modeling for Akkadian texts.
-POS_Tagging.ipynb	Part-of-speech tagging for tokenization.
-Pre_processing_validation.ipynb	Data cleaning and validation.
-Research_pipeline_gemini.ipynb	Experimental pipeline for translation evaluation.
-[by5_updated(dict and pos).ipynb](by5_updated(dict and pos).ipynb)	Updated dictionary and POS integration.
-preprocessing.ipynb	General preprocessing steps.
-rag_inference_plus_training_pipeline.ipynb	RAG + fine-tuning pipeline.
-scraping_data.ipynb	Additional data scraping.
-sentence_processing.ipynb	Sentence-level processing.
-translation_spelling_correction.ipynb	Post-processing for spelling/grammar.
+
+| Notebook | Description |
+|---|---|
+| [AICC_Scraping.ipynb](AICC_Scraping.ipynb) | Scraping and organizing raw cuneiform data. |
+| [Dictionary_transcription_translation_extraction.ipynb](Dictionary_transcription_translation_extraction.ipynb) | Extracting and processing the provided dictionary for RAG. |
+| [EBL_Dictionary_Processing.ipynb](EBL_Dictionary_Processing.ipynb) | Additional dictionary preprocessing. |
+| [Gensim_Akkadian.ipynb](Gensim_Akkadian.ipynb) | Topic modeling for Akkadian texts. |
+| [POS_Tagging.ipynb](POS_Tagging.ipynb) | Part-of-speech tagging for tokenization. |
+| [Pre_processing_validation.ipynb](Pre_processing_validation.ipynb) | Data cleaning and validation. |
+| [Research_pipeline_gemini.ipynb](Research_pipeline_gemini.ipynb) | Experimental pipeline for translation evaluation. |
+| [preprocessing.ipynb](preprocessing.ipynb) | General preprocessing steps. |
+| [rag_inference_plus_training_pipeline.ipynb](rag_inference_plus_training_pipeline.ipynb) | RAG + fine-tuning pipeline. |
+| [scraping_data.ipynb](scraping_data.ipynb) | Additional data scraping. |
+| [sentence_processing.ipynb](sentence_processing.ipynb) | Sentence-level processing. |
+| [translation_spelling_correction.ipynb](translation_spelling_correction.ipynb) | Post-processing for spelling/grammar. |
